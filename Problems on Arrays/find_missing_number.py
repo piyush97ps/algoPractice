@@ -16,7 +16,7 @@ def findMissingNum(a,n):
     for i in range(1, n): 
         x1 = x1 ^ a[i]      #We are doing XOR of the array elements
     
-    for i in range(2, n + 2): 
+    for i in range(2, n + 2):
         x2 = x2 ^ i        #Now we are applying the xor operation on indices 
     return x1 ^ x2          #If you apply XOR of the x1 and x2 then you get the missing number
 
